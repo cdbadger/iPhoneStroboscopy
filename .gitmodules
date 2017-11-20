@@ -1,0 +1,3 @@
+[submodule "StrobeLight"]
+	path = StrobeLight
+	url = https://github.com/InderJagdeo/StrobeLight.git

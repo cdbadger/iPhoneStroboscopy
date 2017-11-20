@@ -7,14 +7,18 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
+		AB892D6D1FAE451800D65917 /* PitchDetectionAlgorithm.swift in Sources */ = {isa = PBXBuildFile; fileRef = AB892D6C1FAE451800D65917 /* PitchDetectionAlgorithm.swift */; };
 		AB8E5FC61FABE128002FDEBB /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = AB8E5FC51FABE128002FDEBB /* AppDelegate.swift */; };
 		AB8E5FC81FABE128002FDEBB /* ViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = AB8E5FC71FABE128002FDEBB /* ViewController.swift */; };
 		AB8E5FCB1FABE128002FDEBB /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = AB8E5FC91FABE128002FDEBB /* Main.storyboard */; };
 		AB8E5FCD1FABE128002FDEBB /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = AB8E5FCC1FABE128002FDEBB /* Assets.xcassets */; };
 		AB8E5FD01FABE128002FDEBB /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = AB8E5FCE1FABE128002FDEBB /* LaunchScreen.storyboard */; };
+		F933D41C11D8F964EEBDCADF /* Pods_iPhone_Stroboscopy.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = EB910EB5D18EB7EC7C0CD262 /* Pods_iPhone_Stroboscopy.framework */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
+		754F088077EB68E417D58BB1 /* Pods-iPhone Stroboscopy.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-iPhone Stroboscopy.debug.xcconfig"; path = "Pods/Target Support Files/Pods-iPhone Stroboscopy/Pods-iPhone Stroboscopy.debug.xcconfig"; sourceTree = "<group>"; };
+		AB892D6C1FAE451800D65917 /* PitchDetectionAlgorithm.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = PitchDetectionAlgorithm.swift; sourceTree = "<group>"; };
 		AB8E5FC21FABE128002FDEBB /* iPhone Stroboscopy.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = "iPhone Stroboscopy.app"; sourceTree = BUILT_PRODUCTS_DIR; };
 		AB8E5FC51FABE128002FDEBB /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
 		AB8E5FC71FABE128002FDEBB /* ViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ViewController.swift; sourceTree = "<group>"; };
@@ -22,6 +26,8 @@
 		AB8E5FCC1FABE128002FDEBB /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
 		AB8E5FCF1FABE128002FDEBB /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
 		AB8E5FD11FABE128002FDEBB /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		EB910EB5D18EB7EC7C0CD262 /* Pods_iPhone_Stroboscopy.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_iPhone_Stroboscopy.framework; sourceTree = BUILT_PRODUCTS_DIR; };
+		F8FC92C8D7EFBA007A002C54 /* Pods-iPhone Stroboscopy.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-iPhone Stroboscopy.release.xcconfig"; path = "Pods/Target Support Files/Pods-iPhone Stroboscopy/Pods-iPhone Stroboscopy.release.xcconfig"; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -29,17 +35,45 @@
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				F933D41C11D8F964EEBDCADF /* Pods_iPhone_Stroboscopy.framework in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
 /* End PBXFrameworksBuildPhase section */
 
 /* Begin PBXGroup section */
+		2F59FAF6DC66B67E6098CA80 /* Pods */ = {
+			isa = PBXGroup;
+			children = (
+				754F088077EB68E417D58BB1 /* Pods-iPhone Stroboscopy.debug.xcconfig */,
+				F8FC92C8D7EFBA007A002C54 /* Pods-iPhone Stroboscopy.release.xcconfig */,
+			);
+			name = Pods;
+			sourceTree = "<group>";
+		};
+		AB072AAC1FAE8B6A00C5DA93 /* Controllers */ = {
+			isa = PBXGroup;
+			children = (
+				AB8E5FC71FABE128002FDEBB /* ViewController.swift */,
+			);
+			path = Controllers;
+			sourceTree = "<group>";
+		};
+		AB683CB61FAE8C6A00FF5A30 /* Models */ = {
+			isa = PBXGroup;
+			children = (
+				AB892D6C1FAE451800D65917 /* PitchDetectionAlgorithm.swift */,
+			);
+			path = Models;
+			sourceTree = "<group>";
+		};
 		AB8E5FB91FABE128002FDEBB = {
 			isa = PBXGroup;
 			children = (
 				AB8E5FC41FABE128002FDEBB /* iPhone Stroboscopy */,
 				AB8E5FC31FABE128002FDEBB /* Products */,
+				2F59FAF6DC66B67E6098CA80 /* Pods */,
+				E048948A06469805BDDA52E6 /* Frameworks */,
 			);
 			sourceTree = "<group>";
 		};
@@ -54,14 +88,23 @@
 		AB8E5FC41FABE128002FDEBB /* iPhone Stroboscopy */ = {
 			isa = PBXGroup;
 			children = (
+				AB683CB61FAE8C6A00FF5A30 /* Models */,
+				AB072AAC1FAE8B6A00C5DA93 /* Controllers */,
 				AB8E5FC51FABE128002FDEBB /* AppDelegate.swift */,
-				AB8E5FC71FABE128002FDEBB /* ViewController.swift */,
 				AB8E5FC91FABE128002FDEBB /* Main.storyboard */,
 				AB8E5FCC1FABE128002FDEBB /* Assets.xcassets */,
 				AB8E5FCE1FABE128002FDEBB /* LaunchScreen.storyboard */,
 				AB8E5FD11FABE128002FDEBB /* Info.plist */,
 			);
 			path = "iPhone Stroboscopy";
+			sourceTree = "<group>";
+		};
+		E048948A06469805BDDA52E6 /* Frameworks */ = {
+			isa = PBXGroup;
+			children = (
+				EB910EB5D18EB7EC7C0CD262 /* Pods_iPhone_Stroboscopy.framework */,
+			);
+			name = Frameworks;
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
@@ -71,9 +114,12 @@
 			isa = PBXNativeTarget;
 			buildConfigurationList = AB8E5FD41FABE128002FDEBB /* Build configuration list for PBXNativeTarget "iPhone Stroboscopy" */;
 			buildPhases = (
+				D7E1F0CA1105601506E8AC23 /* [CP] Check Pods Manifest.lock */,
 				AB8E5FBE1FABE128002FDEBB /* Sources */,
 				AB8E5FBF1FABE128002FDEBB /* Frameworks */,
 				AB8E5FC01FABE128002FDEBB /* Resources */,
+				4C2B9D1156280FBFE489FDC6 /* [CP] Embed Pods Frameworks */,
+				E12BB8CB3F26A3F87D5E41B3 /* [CP] Copy Pods Resources */,
 			);
 			buildRules = (
 			);
@@ -131,12 +177,69 @@
 		};
 /* End PBXResourcesBuildPhase section */
 
+/* Begin PBXShellScriptBuildPhase section */
+		4C2B9D1156280FBFE489FDC6 /* [CP] Embed Pods Frameworks */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputPaths = (
+				"${SRCROOT}/Pods/Target Support Files/Pods-iPhone Stroboscopy/Pods-iPhone Stroboscopy-frameworks.sh",
+				"${BUILT_PRODUCTS_DIR}/Beethoven/Beethoven.framework",
+				"${BUILT_PRODUCTS_DIR}/Pitchy/Pitchy.framework",
+			);
+			name = "[CP] Embed Pods Frameworks";
+			outputPaths = (
+				"${TARGET_BUILD_DIR}/${FRAMEWORKS_FOLDER_PATH}/Beethoven.framework",
+				"${TARGET_BUILD_DIR}/${FRAMEWORKS_FOLDER_PATH}/Pitchy.framework",
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "\"${SRCROOT}/Pods/Target Support Files/Pods-iPhone Stroboscopy/Pods-iPhone Stroboscopy-frameworks.sh\"\n";
+			showEnvVarsInLog = 0;
+		};
+		D7E1F0CA1105601506E8AC23 /* [CP] Check Pods Manifest.lock */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputPaths = (
+				"${PODS_PODFILE_DIR_PATH}/Podfile.lock",
+				"${PODS_ROOT}/Manifest.lock",
+			);
+			name = "[CP] Check Pods Manifest.lock";
+			outputPaths = (
+				"$(DERIVED_FILE_DIR)/Pods-iPhone Stroboscopy-checkManifestLockResult.txt",
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "diff \"${PODS_PODFILE_DIR_PATH}/Podfile.lock\" \"${PODS_ROOT}/Manifest.lock\" > /dev/null\nif [ $? != 0 ] ; then\n    # print error to STDERR\n    echo \"error: The sandbox is not in sync with the Podfile.lock. Run 'pod install' or update your CocoaPods installation.\" >&2\n    exit 1\nfi\n# This output is used by Xcode 'outputs' to avoid re-running this script phase.\necho \"SUCCESS\" > \"${SCRIPT_OUTPUT_FILE_0}\"\n";
+			showEnvVarsInLog = 0;
+		};
+		E12BB8CB3F26A3F87D5E41B3 /* [CP] Copy Pods Resources */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputPaths = (
+			);
+			name = "[CP] Copy Pods Resources";
+			outputPaths = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "\"${SRCROOT}/Pods/Target Support Files/Pods-iPhone Stroboscopy/Pods-iPhone Stroboscopy-resources.sh\"\n";
+			showEnvVarsInLog = 0;
+		};
+/* End PBXShellScriptBuildPhase section */
+
 /* Begin PBXSourcesBuildPhase section */
 		AB8E5FBE1FABE128002FDEBB /* Sources */ = {
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
 				AB8E5FC81FABE128002FDEBB /* ViewController.swift in Sources */,
+				AB892D6D1FAE451800D65917 /* PitchDetectionAlgorithm.swift in Sources */,
 				AB8E5FC61FABE128002FDEBB /* AppDelegate.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
@@ -272,6 +375,7 @@
 		};
 		AB8E5FD51FABE128002FDEBB /* Debug */ = {
 			isa = XCBuildConfiguration;
+			baseConfigurationReference = 754F088077EB68E417D58BB1 /* Pods-iPhone Stroboscopy.debug.xcconfig */;
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				CODE_SIGN_STYLE = Automatic;
@@ -287,6 +391,7 @@
 		};
 		AB8E5FD61FABE128002FDEBB /* Release */ = {
 			isa = XCBuildConfiguration;
+			baseConfigurationReference = F8FC92C8D7EFBA007A002C54 /* Pods-iPhone Stroboscopy.release.xcconfig */;
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				CODE_SIGN_STYLE = Automatic;
